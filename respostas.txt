@@ -1,0 +1,74 @@
+Questão 1:
+
+#include <stdio.h>
+
+void inverter(int v[]) {
+    int i, vii[3], j = 2;
+    for(i = 0; i < 3; i++) {
+        vii[i] = v[i];
+    }
+    for(i = 0; i < 3; i++) {
+        v[i] = vii[j];
+        j--;
+    }
+}
+
+int main() {
+    int vet[3] = {4, 5, 6};
+    inverter(vet);
+}
+
+
+
+Questão 2:
+
+O programa realiza várias operações aritméticas com os elementos de uma matriz e, a sua saída é: -5.
+
+
+
+Questão 3:
+
+# include < stdio .h > 
+int main ( ) {
+	int N_ant , N_prox , N , N_atual N_ant = N_atual =1;          /* Falta de vírgula entre variáveis e variável recebendo outra variável (que ainda não foi declarada) como valor */
+	for( i =1 ,i <= N , i ++) {               /* Variável “i” não declarada */
+		 N_prox = N_ant + N_atual ;
+		 N_ant = N_atual ;
+		 N_atual = N_prox ;	           /* Variáveis, qua não possuem valores, sendo usadas em operações aritméticas e em atribuições */
+					/* Ausência de uma “}” */
+	printf ("Fim do laco !\n") ; 
+	return   		/* Ausência de um “0” após “return” */
+} 
+
+
+
+Questão 4:
+
+#include <stdio.h>
+
+int somaEntre(int n1, int n2) {
+    int i, r = 0;
+    if(n1 > n2) {
+        for(i = n1 - 1; i > n2; i--) {
+            r = r + i;
+        }
+    } else {
+        for(i = n2 - 1; i > n1; i--) {
+            r = r + i;
+        }
+    }
+    return r;
+}
+
+int main() {
+    int a = 4, b = 7;
+    int resultado = somaEntre(a, b);
+    printf("%d", resultado);
+}
+
+
+Questão 5:
+
+A saída do programa é: 
+2
+200
